@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/near-marketplace/static/css/main.caa43b79.css",
+    "main.js": "/near-marketplace/static/js/main.34ce72c5.js",
+    "static/js/787.89e488f7.chunk.js": "/near-marketplace/static/js/787.89e488f7.chunk.js",
+    "static/media/cyber.jpeg": "/near-marketplace/static/media/cyber.2f49f300f3bb2f11ca6b.jpeg",
+    "static/media/bootstrap-icons.woff?": "/near-marketplace/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/near-marketplace/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "index.html": "/near-marketplace/index.html",
+    "main.caa43b79.css.map": "/near-marketplace/static/css/main.caa43b79.css.map",
+    "main.34ce72c5.js.map": "/near-marketplace/static/js/main.34ce72c5.js.map",
+    "787.89e488f7.chunk.js.map": "/near-marketplace/static/js/787.89e488f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caa43b79.css",
+    "static/js/main.34ce72c5.js"
+  ]
+}
