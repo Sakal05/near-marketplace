@@ -8,13 +8,15 @@ import Cover from "./components/utils/Cover";
 import coverImg from "./assets/img/cyber.jpeg";
 import "./App.css";
 
+
 const App = function AppWrapper() {
+  debugger
   const account = window.walletConnection.account();
   const [balance, setBalance] = useState("0");
   const getBalance = useCallback(async () => {
     if (account.accountId) {
       setBalance(await accountBalance());
-      console.log(account.accountId);
+      
     }
   });
 

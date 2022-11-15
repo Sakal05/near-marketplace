@@ -21,7 +21,7 @@ const AddProduct = ({ save }) => {
         variant="dark"
         className="rounded-pill px-0"
         style={{ width: "38px" }}
-      >
+      > 
         <i class="bi bi-plus"></i>
       </Button>
       <Modal show={show} onHide={handleClose} centered>
@@ -30,7 +30,7 @@ const AddProduct = ({ save }) => {
         </Modal.Header>
         <Form>
           <Modal.Body>
-        
+          
             <FloatingLabel
               controlId="inputName"
               label="Product name"

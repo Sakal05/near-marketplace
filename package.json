@@ -1,4 +1,7 @@
+
+
 {
+  "homepage": "https://Sakal05.github.io/near-marketplace",
   "name": "near-marketplace",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +12,9 @@
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "buffer": "^6.0.3",
+    "gh-pages": "^4.0.0",
     "near-api-js": "^1.1.0",
+    "near-sdk-js": "^0.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -22,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

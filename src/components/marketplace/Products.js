@@ -10,7 +10,7 @@ import {
   buyProduct,
   createProduct,
 } from "../../utils/marketplace";
-import { v4 as uuid4 } from "uuid";
+
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -28,8 +28,8 @@ const Products = () => {
     }
   });
 
-  const addProduct = async (data) => {
-    try {
+  const addProduct = async(data) => {
+    try { 
       setLoading(true);
       createProduct(data).then((_resp) => {
         getProducts();
@@ -42,9 +42,10 @@ const Products = () => {
       setLoading(false);
     }
   };
-  const buy = async (id, price) => {
+  const buy = (id, price) => {
+    debugger
     try {
-      await buyProduct({
+       buyProduct({
         id,
         price,
       }).then((_resp) => getProducts());
@@ -68,14 +69,19 @@ const Products = () => {
             <AddProduct save={addProduct} />
           </div>
           <Row xs={1} sm={2} lg={3} className="g-3  mb-5 g-xl-4 g-xxl-5">
-            {products.map((_product) => (
-              <Product
+          
+            {products.map((product) => (
+              <Product 
+                key={product.id}
                 product={{
-                  ..._product,
+                  ...product,
                 }}
                 buy={buy}
+                
               />
+              
             ))}
+            
           </Row>
         </>
       ) : (
